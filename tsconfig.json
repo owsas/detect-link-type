@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/",
+        "lib": [
+            "es2015"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "declaration": true
+    },
+    "include": [
+        "./index.ts"
+    ],
+    "exclude": [
+        "node_modules/"
+    ]
+}

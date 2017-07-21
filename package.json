@@ -1,0 +1,36 @@
+{
+  "name": "detect-link-type",
+  "version": "1.0.0",
+  "description": "Detects the type of a link",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "detect",
+    "link",
+    "type"
+  ],
+  "author": "Juan Camilo Guarin P",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^20.0.4",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
