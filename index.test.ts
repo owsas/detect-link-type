@@ -41,3 +41,13 @@ test('should detect type is ttf', () => {
     const link = "http://example.com/style.ttf";
     expect(detector.isTTF(link)).toBe(true);
 });
+
+test('should detect type is js', () => {
+    const link = "http://example.com/style.js";
+    expect(detector.isJS(link)).toBe(true);
+});
+
+test('should detect type is pdf', () => {
+    const link = "http://example.com/style.pdf";
+    expect(detector.isPDF(link)).toBe(true);
+});

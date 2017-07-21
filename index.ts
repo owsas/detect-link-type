@@ -46,8 +46,24 @@ export class Detector {
     /**
      * @param {string} link 
      */
-    static isImage(link) {
-        return Detector.isPNG(link) || Detector.isJPG(link);
+    static isImage(link): boolean {
+        return Detector.isPNG(link)
+            || Detector.isJPG(link)
+            || Detector.isGIF(link);
+    }
+
+    /**
+     * @param {string} link 
+     */
+    static isJS(link): boolean {
+        return Detector.getExtension(link) === 'js';
+    }
+
+    /**
+     * @param {string} link 
+     */
+    static isPDF(link): boolean {
+        return Detector.getExtension(link) === 'pdf';
     }
 
     /**

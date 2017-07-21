@@ -28,6 +28,14 @@ export declare class Detector {
      */
     static isImage(link: any): boolean;
     /**
+     * @param {string} link
+     */
+    static isJS(link: any): boolean;
+    /**
+     * @param {string} link
+     */
+    static isPDF(link: any): boolean;
+    /**
      * Gets the extension of a link
      * @param {string} link
      */

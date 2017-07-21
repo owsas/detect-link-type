@@ -30,6 +30,8 @@ Detector.isJPG(LINK); // false
 Detector.isCSS(LINK); // false
 Detector.isHTML(LINK); // false
 Detector.isTTF(LINK); // false
+Detector.isJS(LINK); // false
+Detector.isPDF(LINK); // false
 ```
 
 ## Credits

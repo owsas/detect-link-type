@@ -44,7 +44,21 @@ var Detector = (function () {
      * @param {string} link
      */
     Detector.isImage = function (link) {
-        return Detector.isPNG(link) || Detector.isJPG(link);
+        return Detector.isPNG(link)
+            || Detector.isJPG(link)
+            || Detector.isGIF(link);
+    };
+    /**
+     * @param {string} link
+     */
+    Detector.isJS = function (link) {
+        return Detector.getExtension(link) === 'js';
+    };
+    /**
+     * @param {string} link
+     */
+    Detector.isPDF = function (link) {
+        return Detector.getExtension(link) === 'pdf';
     };
     /**
      * Gets the extension of a link
