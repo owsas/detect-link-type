@@ -1,5 +1,10 @@
 import { Detector as detector } from './index';
 
+test('should be able to work with links with queries', () => {
+    const link = "http://example.com/index.html?q=something";
+    expect(detector.isHTML(link)).toBeTruthy();
+});
+
 test('should detect the extension', () => {
     const link = "http://example.com/index.html";
     expect(detector.getExtension(link)).toBeTruthy();

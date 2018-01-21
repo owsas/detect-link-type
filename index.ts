@@ -1,3 +1,5 @@
+
+import * as parseurl from 'parseurl';
 export class Detector {
 
     /**
@@ -75,7 +77,10 @@ export class Detector {
             throw new Error('link must be a string');
         }
 
-        var lastChars = link.substr(link.length - 5, 5);
+        const parsed = parseurl({ url: link });
+        const realLink = parsed.hostname ? parsed.pathname : link;
+
+        var lastChars = realLink.substr(realLink.length - 5, 5);
         var type = lastChars.split('.')[1];
         if (!type) {
             return null;
