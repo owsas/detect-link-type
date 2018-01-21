@@ -32,5 +32,8 @@
       "json",
       "jsx"
     ]
+  },
+  "dependencies": {
+    "parseurl": "^1.3.2"
   }
 }
