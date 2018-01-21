@@ -5,6 +5,11 @@ test('should be able to work with links with queries', () => {
     expect(detector.isHTML(link)).toBeTruthy();
 });
 
+test('should be able to work with links with images', () => {
+    const link = "https://scontent.xx.fbcdn.net/v/t1.0-9/p720x720/a124.jpg?oh=somekycae52123123241&oe=12aFEAFV3";
+    expect(detector.isImage(link)).toBeTruthy();
+});
+
 test('should detect the extension', () => {
     const link = "http://example.com/index.html";
     expect(detector.getExtension(link)).toBeTruthy();
