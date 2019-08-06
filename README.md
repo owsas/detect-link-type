@@ -1,3 +1,4 @@
+# Migrated to new monorepo: https://github.com/owsas/opensource
 # detect-link-type
 
 Detects the type of a link, getting the extension of a provided link, in ES2015.
